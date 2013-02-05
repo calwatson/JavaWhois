@@ -423,6 +423,10 @@ public class WhoisServerPool {
 	 * @throws IOException
 	 */
 	public static WhoisResponse query(String name) throws UnknownHostException, IOException {
-		return getServer(name).query(name);
+		String tld = getTLD(name);
+        if(!servers.containsKey(tld)){
+            return new WhoisResponse("No server found for domain name ["+name+"] ");
+        }
+        return getServer(name).query(name);
 	}
 }
