@@ -4,7 +4,7 @@
   <groupId>org.neverfear</groupId>
   <artifactId>whois</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>Java Whois</name>
   <dependencies>
   </dependencies>
